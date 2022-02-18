@@ -1,0 +1,49 @@
+{
+  "name": "q-cloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.ts",
+  "license": "cc",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "nodemon": "nodemon --watch src/**/*.ts --watch src/**/*.js --exec node -r ts-node/register/transpile-only src/index.ts",
+    "eslint": "eslint src/**/*.{js,ts,tsx}",
+    "dev": "nodemon --experimental-json-modules src/index.ts",
+    "debug": "set DEBUG=* TS_NODE_FILES=true & node -r ts-node/register/transpile-only src/index.ts"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "axios": "^0.24.0",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "enjoi": "^3.2.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.3",
+    "graphql-request": "^3.5.0",
+    "graphql.macro": "^1.4.2",
+    "http": "^0.0.1-security",
+    "joi": "^13.1.2",
+    "joi-date-extensions": "^1.1.1",
+    "knex": "^0.95.14",
+    "mqtt": "^4.2.8",
+    "node-schedule": "^2.0.0",
+    "pg": "^8.7.1",
+    "pm2": "^5.1.2",
+    "typescript": "^4.5.5",
+    "uuid": "^3.2.1",
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/express": "^4.17.13",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "debug": "^4.3.3",
+    "eslint": "^8.8.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.0",
+    "ts-node": "^10.4.0"
+  }
+}
